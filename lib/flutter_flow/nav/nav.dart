@@ -44,6 +44,16 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: HomePageWidget.routeName,
           path: HomePageWidget.routePath,
           builder: (context, params) => HomePageWidget(),
+        ),
+        FFRoute(
+          name: TekneIlanWidget.routeName,
+          path: TekneIlanWidget.routePath,
+          builder: (context, params) => TekneIlanWidget(),
+        ),
+        FFRoute(
+          name: FiltreleWidget.routeName,
+          path: FiltreleWidget.routePath,
+          builder: (context, params) => FiltreleWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
